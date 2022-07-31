@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//test
+
 Route::get('/', function () {
     return view('ecommerce-dashboard');
 })->name('index');
