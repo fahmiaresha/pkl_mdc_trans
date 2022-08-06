@@ -54,9 +54,7 @@
                                         <input type="hidden" name="ID_CUSTOMER" value="{{ $sewa_bus->ID_CUSTOMER }}"> <br/>
                                         <div class="col-md-4 mb-3">
                                             <label for="nama" class="col-form-label">Nama Customer :</label>
-                                            
                                                 <label>{{$customer->NAMA_CUSTOMER}}</label>
-                                                
                                         </div>
                                         
                                     </div>
@@ -119,20 +117,20 @@
                                         <div class="col-md-4 mb-3">
                                             <label for="total_payment" class="col-form-label">Total Payment :</label>
                                             <input type="text" class="form-control" id="total_payment1_tampil" name="total_payment" 
-                                            value="<?php echo number_format($sewa_bus->total_payment,'0',',','.'); ?>" readonly="">
+                                            value="{{ number_format($sewa_bus->total_payment,'0',',','.') }}" readonly="">
                                             <input type="hidden" id="total_payment1"  value="{{$sewa_bus->total_payment}}">
                                         </div>
                                         <div class="col-md-4 mb-3">
                                             <label for="subtotal" class="col-form-label">DP (25%):</label>
                                             <input type="text" class="form-control" id="subtotal1_tampil" name="subtotal" 
-                                            value="{{$sewa_bus->DP_BUS}}" onkeyup="hitunghargajualA()">
+                                            value="{{ $sewa_bus->DP_BUS }}" onkeyup="hitunghargajualA()">
                                             <input type="hidden" id="subtotal1" name="subtotal1"  value="{{$sewa_bus->DP_BUS}}">
                                         </div>
                                         
                                         <div class="col-md-4 mb-3">
                                             <label for="sisa_bayar" class="col-form-label">Sisa Bayar :</label>
                                             <input type="text" class="form-control" id="sisa_bayar1_tampil" name="sisa_bayar" 
-                                            value="{{$sewa_bus->SISA_SEWA_BUS}}">
+                                            value="{{ number_format($sewa_bus->SISA_SEWA_BUS,'0',',','.') }}" readonly>
                                             <input type="hidden" id="sisa_bayar1" name="sisa_bayar1">
                                         </div>
                                         </div>
@@ -249,14 +247,11 @@
                                         <div>
                                     </div>
                                 </form>
-                    
-
                         </section>
 
                         <h3>Payment Details</h3>
                         <section class="card card-body border mb-0">
                             <h3>Konfirmasi Pembayaran</h3>
-                                
                                         <form action="/pembayaranstore/{{ $sewa_bus->ID_SEWA_BUS }}" method="POST" enctype="multipart/form-data">
                                         {{ csrf_field() }}
                                             <div class="form-row">
@@ -264,9 +259,7 @@
                                                     <label for="nama" class="col-form-label">Rekening Pembayaran :</label>
                                                         <select name="ID_REKENING" class="form-control" id="ID_REKENING">
                                                         @foreach($rekening as $c)
-                                                
                                                             <option value="{{$c->ID_REKENING}}">{{$c->NAMA_BANK}}   -  {{$c->NOMOR_REKENING}}</option>
-                                                        
                                                         @endforeach                 
                                                         </select>
                                                 </div>
@@ -282,9 +275,8 @@
                                                     <label for="nama" class="col-form-label">Jenis Pembayaran :</label>
                                                         <select name="jenisbayar" class="form-control" id="jenisbayar">
                                                             <option selected="selected">-- Pilih --</option>
-                                                                <option>DP (25%)</option>
-                                                                <option>Sisa Bayar</option>
-                                                                <option>Lunas</option>
+                                                                <option value="1">DP (25%)</option>
+                                                                <option value="2">Lunas</option>
                                                         </select>
                                                 </div>
                                             </div>
