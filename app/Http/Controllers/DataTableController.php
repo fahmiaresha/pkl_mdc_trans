@@ -309,28 +309,45 @@ class DataTableController extends Controller
         $sewa_bus= Sewa_Bus::find($id);
        
         if($request->hasFile('file')) {
-
             $file = $request->file('file');
-        
             $fileName = $file->getClientOriginalName();
 
             $bayar = new Pembayaran;
-                $bayar->CARA_BAYAR            = $request->carabayar;
-                $bayar->JENIS_BAYAR           = $request->jenisbayar;
-                $bayar->ID_REKENING           = $request->ID_REKENING;
-                // $bayar->TGL_BAYAR             = $request->tglbayar;
-                $bayar->JUMLAH_BAYAR          = $request->jumlahbayar;
-                $bayar->ID_SEWA_BUS           = $id;
-                $bayar->STATUS_BAYAR          = 1;
-                $bayar->NAMA_BANK_PENGIRIM    = $request->namabank;
-                $bayar->NOREK_PENGIRIM        = $request->norek;
-                $bayar->KETERANGAN            = $request->keterangan;
-                $bayar->ATAS_NAMA             = $request->pemilikrekening;
-                $bayar->BUKTI_TF              = $fileName;
-                $file->move(public_path().'/buktiTF', $fileName);
-                $bayar->save();
+            $bayar->CARA_BAYAR            = $request->carabayar;
+            // $bayar->JENIS_BAYAR           = $request->jenisbayar;
+            $bayar->ID_JENIS           = $request->jenisbayar;
+            $bayar->ID_REKENING           = $request->ID_REKENING;
+            // $bayar->TGL_BAYAR             = $request->tglbayar;
+            $bayar->JUMLAH_BAYAR          = $request->jumlahbayar;
+            $bayar->ID_SEWA_BUS           = $id;
+            $bayar->STATUS_BAYAR          = 1;
+            $bayar->NAMA_BANK_PENGIRIM    = $request->namabank;
+            $bayar->NOREK_PENGIRIM        = $request->norek;
+            $bayar->KETERANGAN            = $request->keterangan;
+            $bayar->ATAS_NAMA             = $request->pemilikrekening;
+            $bayar->BUKTI_TF              = $fileName;
+            $file->move(public_path().'/buktiTF', $fileName);
+            $bayar->save();
+    
+        }else{
+            $bayar = new Pembayaran;
+            $bayar->CARA_BAYAR            = $request->carabayar;
+            // $bayar->JENIS_BAYAR           = $request->jenisbayar;
+            $bayar->ID_JENIS           = $request->jenisbayar;
+            $bayar->ID_REKENING           = $request->ID_REKENING;
+            // $bayar->TGL_BAYAR             = $request->tglbayar;
+            $bayar->JUMLAH_BAYAR          = $request->jumlahbayar;
+            $bayar->ID_SEWA_BUS           = $id;
+            $bayar->STATUS_BAYAR          = 1;
+            $bayar->NAMA_BANK_PENGIRIM    = $request->namabank;
+            $bayar->NOREK_PENGIRIM        = $request->norek;
+            $bayar->KETERANGAN            = $request->keterangan;
+            $bayar->ATAS_NAMA             = $request->pemilikrekening;
+            $bayar->BUKTI_TF              = null;
+            $bayar->save();
+    
         }
-        
+
         // DB::table('pembayaran')->insert([
         //     'CARA_BAYAR'            => $request->CARA_BAYAR,
         //     'ID_REKENING'            => $request->ID_REKENING,
