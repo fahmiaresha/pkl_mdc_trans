@@ -251,6 +251,7 @@
                     <th>Category Bus</th>
                     <th>Tujuan Sewa</th>
                     <th>Pricelist Sewa</th>
+                    <th>Jumlah Hari</th>
                     <th>Action</th>
                 </tr>
             </tfoot>
