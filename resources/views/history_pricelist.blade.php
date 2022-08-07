@@ -23,7 +23,7 @@
 @if(\Session::has('kasir') || \Session::has('admin'))
 <div class="card">
     <div class="card-body">
-        <h6 class="card-title mb-0">Table Pricelist Sewa Bus</h6>
+        <h6 class="card-title mb-0">Table History Pricelist Sewa Bus</h6>
     </div>
     <div class="table-responsive">
         <!-- <center>
@@ -32,7 +32,7 @@
                     </button>
                     </center> -->
         <!-- modal -->
-        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label"
+        <!-- <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -72,7 +72,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div> -->
         <table id="myTable" class="table table-striped table-bordered">
             <thead>
                 <tr>
