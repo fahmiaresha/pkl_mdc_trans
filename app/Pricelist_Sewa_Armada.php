@@ -16,6 +16,7 @@ class Pricelist_Sewa_Armada extends Model
     [
         'ID_CATEGORY',
         'TUJUAN_SEWA',
-        'PRICELIST_SEWA'
+        'PRICELIST_SEWA',
+        'JUMLAH_HARI'
     ];
 }

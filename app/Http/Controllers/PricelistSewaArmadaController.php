@@ -26,7 +26,7 @@ class PricelistSewaArmadaController extends Controller
         $category_armada = DB::table('category_armada')->get();
         $pricelist_sewa_armada=DB::table('pricelist_sewa_armada')
         ->join('category_armada','pricelist_sewa_armada.ID_CATEGORY', '=', 'category_armada.ID_CATEGORY')
-        ->select('category_armada.NAMA_CATEGORY','pricelist_sewa_armada.ID_PRICELIST','pricelist_sewa_armada.TUJUAN_SEWA',
+        ->select('pricelist_sewa_armada.ID_CATEGORY','category_armada.NAMA_CATEGORY','pricelist_sewa_armada.ID_PRICELIST','pricelist_sewa_armada.TUJUAN_SEWA',
         'pricelist_sewa_armada.PRICELIST_SEWA', 'pricelist_sewa_armada.JUMLAH_HARI')
         ->get();
 
@@ -80,6 +80,7 @@ class PricelistSewaArmadaController extends Controller
      */
     public function store(Request $request)
     {
+        // dd($request->jmlhari);
         $pricelist_sewa_armada = new Pricelist_Sewa_Armada;
         $category_armada = new Category;
 
@@ -87,6 +88,7 @@ class PricelistSewaArmadaController extends Controller
             'ID_CATEGORY'       => $request->ID_CATEGORY,
             'TUJUAN_SEWA'       => $request->tujuansewa,
             'PRICELIST_SEWA'    => $request->hargasewa,
+            'JUMLAH_HARI'    => $request->jmlhari,
         ]);
 
         $pricelist_sewa_armada->save();
@@ -132,13 +134,14 @@ class PricelistSewaArmadaController extends Controller
             'ID_CATEGORY'       => $x->ID_CATEGORY,
             'TUJUAN_SEWA'       => $x->TUJUAN_SEWA,
             'PRICELIST_SEWA'    => $x->PRICELIST_SEWA,
+            'JUMLAH_HARI'       => $request->jmlhari
         ]);
 
         DB::table('pricelist_sewa_armada')->where('ID_PRICELIST',$request->id)->update([
             'ID_CATEGORY'       => $request->ID_CATEGORY,
             'TUJUAN_SEWA'       => $request->tujuansewa,
             'PRICELIST_SEWA'    => $request->hargasewa,
-            'JUMLAH_HARI'       => $request->$jmlhari
+            'JUMLAH_HARI'       => $request->jmlhari
         ]);
 
         DB::table('history_pricelist')->insert([
@@ -146,6 +149,7 @@ class PricelistSewaArmadaController extends Controller
             'ID_CATEGORY'       => $request->ID_CATEGORY,
             'TUJUAN_SEWA'       => $request->tujuansewa,
             'PRICELIST_SEWA'    => $request->hargasewa,
+            'JUMLAH_HARI'       => $request->jmlhari
         ]);
 
         return redirect('pricelistsewaarmada');

@@ -51,9 +51,7 @@
                                 <label for="nama" class="col-form-label">Category Bus :</label>
                                 <select name="ID_CATEGORY" class="form-control" id="ID_CATEGORY">
                                     @foreach($category_armada as $c)
-
                                     <option value="{{$c->ID_CATEGORY}}">{{$c->NAMA_CATEGORY}}</option>
-
                                     @endforeach
                                 </select>
                             </div>

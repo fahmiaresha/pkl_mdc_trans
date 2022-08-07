@@ -49,9 +49,7 @@
                                 <label for="nama" class="col-form-label">Category Bus :</label>
                                 <select name="ID_CATEGORY" class="form-control" id="ID_CATEGORY">
                                     @foreach($category_armada as $c)
-
                                     <option value="{{$c->ID_CATEGORY}}">{{$c->NAMA_CATEGORY}}</option>
-
                                     @endforeach
                                 </select>
                             </div>
@@ -176,9 +174,7 @@
                                                 <label for="nama" class="col-form-label">Category Bus :</label>
                                                 <select name="ID_CATEGORY" class="form-control" id="ID_CATEGORY">
                                                     @foreach($category_armada as $c)
-
-                                                    <option value="{{$c->ID_CATEGORY}}">{{$c->NAMA_CATEGORY}}</option>
-
+                                                    <option value="{{$c->ID_CATEGORY}}" @if($c->ID_CATEGORY == $pr->ID_CATEGORY) selected @endif>{{$c->NAMA_CATEGORY}}</option>
                                                     @endforeach
                                                 </select>
                                             </div>
