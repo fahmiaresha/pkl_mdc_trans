@@ -181,7 +181,7 @@ class SewaBusController extends Controller
                 'ID_PENGGUNA'       => $request->ID_PENGGUNA,
                 'JAM_SEWA'          => $request->JAM_SEWA,
                 'JAM_AKHIR_SEWA'    => $request->JAM_AKHIR_SEWA,
-                'STATUS_SEWA'       =>  $request->statussewa
+                'STATUS_SEWA'       => $request->statussewa
         ]);
 
         return redirect('sewa_bus');

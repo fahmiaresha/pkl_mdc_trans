@@ -625,7 +625,7 @@
                             <div class="list-group list-group-flush">
                                 <a href="{{ url('profile',['id'=>Session::get('coba2')]) }}" class="list-group-item">Profile</a>
                                 <!-- <a href="#" class="list-group-item" data-sidebar-target="#settings">Settings</a> -->
-                                <a href="{{ url('logout') }}" class="list-group-item text-danger">Sign Out!</a>
+                                <a href="{{ url('logout') }}" class="list-group-item text-danger">Log Out!</a>
                             </div>
                             <div class="pb-0 p-4">
                                 <!-- <div class="mb-4">
@@ -745,15 +745,6 @@
                         @endif
                         
                         <li>
-                            <a href="#" data-menu-target="#schedule">
-                                <span class="menu-tab-icon">
-                                    <i data-feather="calendar"></i>
-                                </span>
-                                <span>Schedule</span>
-                            </a>
-                        </li>
-
-                        <li>
                             <a href="#" data-menu-target="#sewa">
                                 <span class="menu-tab-icon">
                                     <i data-feather="file"></i>
@@ -762,15 +753,15 @@
                             </a>
                         </li>
 
-                        <li>
+                        <!-- <li>
                             <a href="#" data-menu-target="#rekening">
                                 <span class="menu-tab-icon">
                                     <i data-feather="credit-card"></i>
                                 </span>
                                 <span>Rekening</span>
                             </a>
-                        </li>
-                        @if(\Session::has('admin'))
+                        </li> -->
+                        <!-- @if(\Session::has('admin')) -->
                         <li>
                             <a href="#" data-menu-target="#pembayaran">
                                 <span class="menu-tab-icon">
@@ -779,7 +770,19 @@
                                 <span>Pembayaran</span>
                             </a>
                         </li>
-                        @endif
+                        <!-- @endif -->
+
+                        <li>
+                            <a href="#" data-menu-target="#schedule">
+                                <span class="menu-tab-icon">
+                                    <i data-feather="calendar"></i>
+                                </span>
+                                <span>Penjadwalan</span>
+                            </a>
+                        </li>
+
+
+                        
                   
                     </ul>
                 </div>
@@ -824,11 +827,11 @@
                     </ul> -->
 
                     <ul id="armada">
-                        <li class="navigation-divider">Category Bus</li>
+                        <li class="navigation-divider">Kategori Bus</li>
                         <li>
                             <a  class="active" href="{{ url('category_armadaindex') }}">
                                 <span class="nav-link-icon" data-feather="menu"></span>
-                                <span>Daftar Category Bus</span>
+                                <span>Daftar Kategori Bus</span>
                             </a>
                         </li>
                         
@@ -864,11 +867,11 @@
                             </a>
                         </li> -->
 
-                        <li class="navigation-divider">Testimony</li>
+                        <li class="navigation-divider">Testimoni</li>
                         <li>
                             <a  class="active" href="{{ url('testimony') }}">
                                 <span class="nav-link-icon" data-feather="star"></span>
-                                <span>Testimony</span>
+                                <span>Testimoni</span>
                             </a>
                         </li>
                     
@@ -889,16 +892,16 @@
                     </ul>
 
                     <ul id="schedule">
-                        <li class="navigation-divider">Schedule</li>
+                        <li class="navigation-divider">Penjadwalan Bus</li>
                         <li>
                             <a  class="active" href="{{ url('scheduleindex') }}">
                                 <span class="nav-link-icon" data-feather="calendar"></span>
-                                <span>Schedule</span>
+                                <span>Penjadwalan Bus</span>
                             </a>
                         </li>
                     </ul>
 
-                    <ul id="rekening">
+                    <!-- <ul id="rekening">
                         <li class="navigation-divider">Rekening</li>
                         <li>
                             <a  class="active" href="{{ url('rekening') }}">
@@ -906,7 +909,7 @@
                                 <span>Rekening</span>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
 
                     <ul id="sewa">
                         <li class="navigation-divider">Sewa</li>
@@ -959,6 +962,13 @@
 
                     </ul>
                     <ul id="pembayaran">
+                    <li class="navigation-divider">Rekening</li>
+                        <li>
+                            <a  class="active" href="{{ url('rekening') }}">
+                                <span class="nav-link-icon" data-feather="book"></span>
+                                <span>Rekening</span>
+                            </a>
+                        </li>
                     <li class="navigation-divider">Laporan Pembayaran</li>
                      <li>
                             <a  class="active" href="{{ url('konfirmasipembayaran') }}">

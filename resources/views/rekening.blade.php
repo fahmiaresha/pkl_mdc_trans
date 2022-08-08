@@ -73,7 +73,7 @@
                             <th>Nama Bank</th>
                             <th>No. Rekening</th>
                             <th>Atas Nama</th>
-                            <th>Action</th>
+                            <th>Aksi</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -171,7 +171,7 @@
                             <th>Nama Bank</th>
                             <th>No. Rekening</th>
                             <th>Atas Nama</th>
-                            <th>Action</th>
+                            <th>Aksi</th>
                             </tr>
                         </tfoot>
                     </table>

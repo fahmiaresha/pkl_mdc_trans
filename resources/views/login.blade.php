@@ -19,7 +19,7 @@
                 <input type="checkbox" class="custom-control-input" checked="" id="customCheck1">
                 <!-- <label class="custom-control-label" for="customCheck1">Remember me</label> -->
             </div>
-            <a class="small" href="{{ url('pemulihan_pw') }}">Reset password</a>
+            <a class="small" href="{{ url('pemulihan_pw') }}">Lupa password</a>
         </div>
         <hr>
         <!-- <a href ="{{ url('ecommerce-dashboard')}}" class="btn btn-primary btn-block">Log in</a> -->

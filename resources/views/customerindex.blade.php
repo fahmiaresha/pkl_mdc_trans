@@ -79,7 +79,7 @@
                             <th>Email Customer</th>
                             <th>Telephone Customer</th>
                             <th>Alamat Customer</th>
-                            <th>Action</th>
+                            <th>Aksi</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -222,7 +222,7 @@
                             <th>Email Customer</th>
                             <th>Telephone Customer</th>
                             <th>Alamat Customer</th>
-                            <th>Action</th>
+                            <th>Aksi</th>
                         </tr>
                         </tfoot>
                     </table>

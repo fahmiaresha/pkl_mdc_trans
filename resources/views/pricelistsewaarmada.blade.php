@@ -84,7 +84,7 @@
                     <th>Tujuan Sewa</th>
                     <th>Pricelist Sewa</th>
                     <th>Jumlah Hari</th>
-                    <th>Action</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -252,7 +252,7 @@
                     <th>Tujuan Sewa</th>
                     <th>Pricelist Sewa</th>
                     <th>Jumlah Hari</th>
-                    <th>Action</th>
+                    <th>Aksi</th>
                 </tr>
             </tfoot>
         </table>

@@ -23,7 +23,7 @@
 @if(\Session::has('kasir') || \Session::has('admin'))  
 <div class="card">
                 <div class="card-body">
-                    <h6 class="card-title mb-0">Table Category</h6>
+                    <h6 class="card-title mb-0">Table Kategori</h6>
                 </div>
                 <div class="table-responsive">
                 <center>
@@ -37,7 +37,7 @@
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModal1Label">Tambah Data Category</h5>
+                                    <h5 class="modal-title" id="exampleModal1Label">Tambah Data Kategori</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <i class="ti-close"></i>
                                     </button>
@@ -46,14 +46,14 @@
                                 <form action="category_armadastore" method="post">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="namacategory" class="col-form-label">Nama Category :</label>
+                                    <label for="namacategory" class="col-form-label">Nama Kategori :</label>
                                     <input type="text" class="form-control" id="namacategory" name="namacategory">
                                 </div>
                                 
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary" id="berhasil">Add Category</button>
+                                <button type="submit" class="btn btn-primary" id="berhasil">Tambah Kategori</button>
                             </div>
                             </form>
                             </div>
@@ -62,9 +62,9 @@
                     <table id="myTable" class="table table-striped table-bordered">
                         <thead>
                         <tr>
-                            <th>Id Category</th>
-                            <th>Nama Category</th>
-                            <th>Action</th>
+                            <th>Id Kategori</th>
+                            <th>Nama Kategori</th>
+                            <th>Aksi</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -186,9 +186,9 @@
                                     </tbody>
                                     <tfoot>
                         <tr>
-                            <th>Id Category</th>
-                            <th>Nama Category</th>
-                            <th>Action</th>
+                            <th>Id Kategori</th>
+                            <th>Nama Kategori</th>
+                            <th>Aksi</th>
                         </tr>
                         </tfoot>
                     </table>

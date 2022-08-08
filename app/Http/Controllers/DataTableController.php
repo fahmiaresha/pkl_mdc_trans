@@ -472,7 +472,7 @@ class DataTableController extends Controller
         ->whereRaw('time_to_sec(timediff(CURRENT_TIMESTAMP,created_at))>?',3600)
         ->update([
             'STATUS'=>0,
-            'STATUS_SEWA'=>'DIBATALKAN'
+            'STATUS_SEWA'=>'BATAL OTOMATIS'
         ]);
         return $result;
         // UPDATE `sewa_bus` SET `STATUS`=0 WHERE time_to_sec(timediff(CURRENT_TIMESTAMP,created_at))  > 3600

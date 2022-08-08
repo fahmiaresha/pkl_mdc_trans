@@ -48,7 +48,7 @@
                         <form action="armadastore" method="post">
                             @csrf
                             <div class="form-group">
-                                <label for="nama" class="col-form-label">Category Bus :</label>
+                                <label for="nama" class="col-form-label">Kategori Bus :</label>
                                 <select name="ID_CATEGORY" class="form-control" id="ID_CATEGORY">
                                     @foreach($category_armada as $c)
                                     <option value="{{$c->ID_CATEGORY}}">{{$c->NAMA_CATEGORY}}</option>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary" id="berhasil">Add Bus</button>
+                        <button type="submit" class="btn btn-primary" id="berhasil">Tambah Bus</button>
                     </div>
                     </form>
                 </div>
@@ -88,11 +88,11 @@
                 <tr>
                     <th>Status</th>
                     <!-- <th>Id Bus</th> -->
-                    <th>Category Bus</th>
+                    <th>Kategori Bus</th>
                     <th>Plat Nomor</th>
                     <th>Kapasitas</th>
                     <!-- <th>Fasilitas Armada</th> -->
-                    <th>Action</th>
+                    <th>Aksi</th>
                     <!-- <th>Foto Armada</th>
                             <th>Edit Foto</th> -->
                 </tr>
@@ -311,11 +311,11 @@
                 <tr>
                     <th>Status</th>
                     <!-- <th>Id Bus</th> -->
-                    <th>Category Bus</th>
+                    <th>Kategori Bus</th>
                     <th>Plat Nomor</th>
                     <th>Kapasitas</th>
                     <!-- <th>Fasilitas Armada</th> -->
-                    <th>Action</th>
+                    <th>Aksi</th>
                     <!-- <th>Foto Armada</th>
                             <th>Edit Foto</th> -->
                 </tr>

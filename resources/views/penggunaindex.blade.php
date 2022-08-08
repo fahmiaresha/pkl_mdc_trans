@@ -100,7 +100,7 @@
                     <th>Alamat Pegawai</th>
                     <!-- <th>Password</th> -->
                     <th>Job Status</th>
-                    <th>Action</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -243,7 +243,7 @@
                     <th>Alamat Pegawai</th>
                     <!-- <th>Password</th> -->
                     <th>Job Status</th>
-                    <th>Action</th>
+                    <th>Aksi</th>
                 </tr>
             </tfoot>
         </table>

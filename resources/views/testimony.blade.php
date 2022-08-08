@@ -70,7 +70,7 @@
                     <!-- <th>Id Testimony</th> -->
                     <th>Nama Tester</th>
                     <th>Testimony</th>
-                    <th>Action</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -186,8 +186,8 @@
                     <th>Status</th>
                     <!-- <th>Id Testimony</th> -->
                     <th>Nama Tester</th>
-                    <th>Testimony</th>
-                    <th>Action</th>
+                    <th>Testimoni</th>
+                    <th>Aksi</th>
                 </tr>
             </tfoot>
         </table>

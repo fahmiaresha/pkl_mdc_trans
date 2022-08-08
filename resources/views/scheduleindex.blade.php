@@ -16,7 +16,7 @@
 @if(\Session::has('kasir') || \Session::has('admin'))
     <div class="page-header">
         <div class="page-title">
-            <h3>Schedule Armada</h3>
+            <h3>Penjadwalan Bus</h3>
             <div>
                 <!-- <button class="btn btn-primary" data-toggle="modal"
                         data-target="#createEventModal">
@@ -30,8 +30,8 @@
         <div class="col-md-3 app-sidebar">
             <div class="card">
                 <div class="card-body">
-                    <h6 class="card-title mb-2">Armada</h6>
-                    <p class="text-muted">Armada On Schedule</p>
+                    <h6 class="card-title mb-2">Bus</h6>
+                    <p class="text-muted">Bus On Schedule</p>
                     <div class="list-group mb-3" id="external-events">
                     @foreach($schedule_armada as $schdl)
                         <div class="list-group-item px-0">
@@ -65,7 +65,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Detail Schedule</h5>
+                    <h5 class="modal-title">Detail Penjadwalan</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <i class="ti-close"></i>
                     </button>
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Status Schedule</label>
+                            <label class="col-sm-3 col-form-label">Status Penjadwalan</label>
                             <div class="col-sm-9">
                                 <div class="STATUS_ARMADA">
                                 <input type="hidden" class="form-control" id="STATUS_ARMADA"  name="STATUS_ARMADA">

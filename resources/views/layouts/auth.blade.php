@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Baston - Responsive Admin Dashboard Template</title>
+    <title>PT. MDC Trans Lamongan</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ url('assets/media/image/logo/mdc.png') }}"/>

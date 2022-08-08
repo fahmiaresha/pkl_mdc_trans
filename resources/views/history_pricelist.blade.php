@@ -78,10 +78,10 @@
                 <tr>
                     <th>#</th>
                     <!-- <th>Id Pricelist</th> -->
-                    <th>Category Bus</th>
+                    <th>Kategori Bus</th>
                     <th>Tujuan Sewa</th>
                     <th>Pricelist Sewa</th>
-                    <th>Action</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -128,7 +128,7 @@
                                                     <td>{{ $pr1->ID_PRICELIST }}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><strong>Category Bus</strong></td>
+                                                    <td><strong>Kategori Bus</strong></td>
                                                     <td>
                                                         @if($pr1 -> NAMA_CATEGORY == 'Bus Besar')
                                                         <span
@@ -162,7 +162,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td><strong>Tanggal Dirubah<strong></td>
+                                                    <td><strong>Tanggal Diubah<strong></td>
                                                     <td>{{ $pr1->TGL_GANTI }}</td>
                                                 </tr>
 
@@ -188,10 +188,10 @@
                 <tr>
                     <th>#</th>
                     <!-- <th>Id Pricelist</th> -->
-                    <th>Category Bus</th>
+                    <th>Kategori Bus</th>
                     <th>Tujuan Sewa</th>
                     <th>Pricelist Sewa</th>
-                    <th>Action</th>
+                    <th>Aksi</th>
                 </tr>
             </tfoot>
         </table>

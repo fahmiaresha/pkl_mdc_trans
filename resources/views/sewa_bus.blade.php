@@ -150,7 +150,7 @@
                             <th>Start Time</th>
                             <th>End Date</th>
                             <!-- <th>End Time</th> -->
-                            <th>Action</th>
+                            <th>Aksi</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -162,11 +162,14 @@
                                     @if($sb -> STATUS_SEWA == 'On Schedule')
                                     <td><span class="badge bg-success-bright text-success">{{ $sb -> STATUS_SEWA}}</span></td>
                                     @endif
-                                    @if($sb -> STATUS_SEWA == 'DIBATALKAN')
+                                    @if($sb -> STATUS_SEWA == 'BATAL OTOMATIS')
                                     <td><span class="badge bg-success-bright text-danger">{{ $sb -> STATUS_SEWA}}</span></td>
                                     @endif
-                                    @if($sb -> STATUS_SEWA == 'Sudah Bayar')
+                                    @if($sb -> STATUS_SEWA == 'Selesai')
                                     <td><span class="badge bg-success-bright text-primary">{{ $sb -> STATUS_SEWA}}</span></td>
+                                    @endif
+                                    @if($sb -> STATUS_SEWA == 'Dibatalkan')
+                                    <td><span class="badge bg-success-bright text-danger">{{ $sb -> STATUS_SEWA}}</span></td>
                                     @endif
                                     <td>{{ $sb -> ID_SEWA_BUS }}</td>
                                     <td>{{ $sb -> NAMA_PENGGUNA }}</td>
@@ -276,7 +279,7 @@
                             <th>Start Time</th>
                             <th>End Date</th>
                             <!-- <th>End Time</th> -->
-                            <th>Action</th>
+                            <th>Aksi</th>
                             </tr>
                         </tfoot>
                     </table>

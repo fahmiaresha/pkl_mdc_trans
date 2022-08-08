@@ -48,7 +48,7 @@
                     <!-- <th>Id Pembayaran</th> -->
                     <th class="text-center">Id Sewa Bus</th>
                     <th class="text-center">Nama Customer</th>
-                    <th class="text-center">Action</th>
+                    <th class="text-center">Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -113,7 +113,7 @@
                     <!-- <th>Id Pembayaran</th> -->
                     <th class="text-center">Id Sewa Bus</th>
                     <th class="text-center">Nama Customer</th>
-                    <th class="text-center">Action</th>
+                    <th class="text-center">Aksi</th>
                 </tr>
             </tfoot>
         </table>

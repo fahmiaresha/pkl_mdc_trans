@@ -29,7 +29,7 @@
                                                 {{ csrf_field() }}
                                                
                                                 <div class="form-group">
-                                                    <label for="nama" class="col-form-label">Category Bus :</label>
+                                                    <label for="nama" class="col-form-label">Kategori Bus :</label>
                                                     <select name="ID_CATEGORY" class="form-control" id="ID_CATEGORY">
                                                         @foreach($category_armada as $c)
                                                        
